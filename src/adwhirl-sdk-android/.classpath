@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/adwhirl/adapters/MdotMAdapter.java|com/adwhirl/adapters/OneRiotAdapter.java|com/adwhirl/adapters/QuattroAdapter.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="C:/android-sdk_r10-windows/jdk/InMobi_Android_SDK/InMobiAndroidSDK.jar"/>
+	<classpathentry kind="lib" path="C:/android-sdk_r10-windows/jdk/GooleAdView/GoogleAdView.jar"/>
+	<classpathentry kind="lib" path="C:/android-sdk_r10-windows/admode/GoogleAdMobAdsSdkAndroid-4.1.0/GoogleAdMobAdsSdk-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/android-sdk_r10-windows/ZestADZ-android-SDK/zestadz_sdk_androidv1.2.jar"/>
+	<classpathentry kind="lib" path="C:/android-sdk_r10-windows/mmDev/AndroidSDK/MMAdView.jar"/>
+	<classpathentry kind="lib" path="src/com/adwhirl/adapters/MdotMAdapter.java"/>
+	<classpathentry kind="lib" path="C:/Andoid_learn/adwhirl/kusogi/kuAD 1.2.3/kuAD 1.2.3.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
