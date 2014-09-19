@@ -67,7 +67,7 @@ This mobile server notify clients to switch ad networks on the fly.
      4. execute Daemon.java 
 
 
- modify clien
+ modify client
 ===================================
 
 1. 
