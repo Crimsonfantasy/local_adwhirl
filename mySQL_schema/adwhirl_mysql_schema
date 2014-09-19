@@ -1,0 +1,168 @@
+create database adwhirl_DB;
+use adwhirl_DB;
+create table users_unverified(
+
+	id		varchar(100),
+        email           varchar(100),
+        firstName       varchar(100),
+        lastName        varchar(100),
+        password        varchar(100),
+        allowEmail      int(4)      ,
+        createdAt        varchar(100),
+	deleted		varchar(100),
+	
+	primary key(id)
+);
+
+
+create table users(
+	
+	id		varchar(100),	
+	email		varchar(100),	
+	firstName	varchar(100),	
+	lastName	varchar(100),	
+	password	varchar(100),	
+	prefText	varchar(100),	
+	deleted		varchar(100),	
+
+	primary key(id)
+
+);
+
+create table apps(
+	
+	id		varchar(100),	
+	uid		varchar(100),	
+	bgColor		varchar(100),	
+	fgColor		varchar(100),	
+	platform 	varchar(100),	
+	adsOn		varchar(100),	
+	cycleTime	varchar(100),	
+	name		varchar(100),
+	transition	varchar(100),	
+	locationOn	varchar(100),	
+	storeUrl	varchar(100),	
+	deleted		varchar(100),	
+
+
+	primary key(id)
+
+);
+
+
+create table networks(
+	
+	id		varchar(100),	
+	adsOn		varchar(100),	
+	weight		varchar(100),	
+	priority	varchar(100),	
+	aid		varchar(100),	
+	type		varchar(100),	
+	adKey		varchar(100),	
+	deleted		varchar(100),	
+
+	primary key(id)
+
+);
+
+create table app_customs(
+	
+	id	varchar(100),	
+	aid	varchar(100),	
+	cid	varchar(100),	
+	weight	varchar(100),	
+	deleted	varchar(100),	
+
+	primary key(id)
+
+);
+
+create table customs(
+	
+	id		varchar(100),	
+	uid		varchar(100),	
+	name		varchar(100),	
+	description	varchar(100),	
+	type		varchar(100),	
+	link		varchar(100),	
+	linkType	varchar(100),	
+	launchType	varchar(100),	
+	imageLink	varchar(100),
+	deleted		varchar(100),
+
+	primary key(id)
+
+);
+
+create table apps_invalid(
+	
+	id		varchar(100),	
+	dateTime	varchar(100),	
+	deleted		varchar(100),	
+
+	primary key(id)
+
+);
+
+create table customs_invalid(
+	
+	id		varchar(100),	
+	dateTime	varchar(100),	
+	deleted		varchar(100),	
+
+	primary key(id)
+
+);
+
+create table stats(
+	
+	id		varchar(100),	
+	aid		varchar(100),	
+	nid		varchar(100),	
+	type		varchar(100),
+	dateTime	varchar(100),	
+	clicks		varchar(100),	
+	Impressions	varchar(100),	
+	deleted		varchar(100),	
+
+	primary key(id)
+
+);
+
+create table users_forgot(
+	
+	id		varchar(100),	
+	uid		varchar(100),	
+	createdAt	varchar(100),	
+
+	primary key(id)
+
+);
+
+
+
+
+create  table stats_temp(
+
+        id              varchar(100),
+        aid             varchar(100),
+        nid             varchar(100),
+        type            varchar(100),
+        dateTime        varchar(100),
+        clicks          varchar(100),   
+        Impressions     varchar(100),   
+        deleted         varchar(100),   
+
+        primary key(id)
+
+);
+
+
+create table stats_invalid(
+	id 	varchar(100),
+	aid	varchar(100),
+	dateTime	varchar(100),
+	deleted		varchar(100),
+
+	primary key(id)
+);

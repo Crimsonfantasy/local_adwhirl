@@ -1,0 +1,42 @@
+00:32:02 (isValidLogin) 
+-------------------------
+file name/var/www/html/inc/class/UserUtil.php
+at line53
+
+@ @ @ @ @ @ @ @ @ @ @ @ @
+array(0) {
+}
+---------------------------
+
+00:32:19 (registerProcessed) 
+-------------------------
+file name/var/www/html/inc/class/UserUtil.php
+at line153put
+
+@ @ @ @ @ @ @ @ @ @ @ @ @
+array(6) {
+  ["email"]=>
+  string(20) "a2836572@hotmail.com"
+  ["password"]=>
+  string(32) "6fd492dd68d3ee3b830196bb673ff113"
+  ["allowEmail"]=>
+  int(0)
+  ["firstName"]=>
+  string(2) "Yu"
+  ["lastName"]=>
+  string(5) "Sheng"
+  ["createdAt"]=>
+  string(10) "2011-11-28"
+}
+---------------------------
+
+00:32:20 (registerProcessed) 
+-------------------------
+file name/var/www/html/inc/class/UserUtil.php
+at line53
+
+@ @ @ @ @ @ @ @ @ @ @ @ @
+array(0) {
+}
+---------------------------
+

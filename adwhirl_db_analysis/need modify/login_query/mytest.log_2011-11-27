@@ -1,0 +1,100 @@
+23:46:19 (login) 
+-------------------------
+file name/var/www/html/inc/class/UserUtil.php
+at line52
+msg
+@ @ @ @ @ @ @ @ @ @ @ @ @
+array(1) {
+  [0]=>
+  array(5) {
+    ["id"]=>
+    string(32) "16a0976b0e074f16bfdf8a360ad29dc1"
+    ["lastName"]=>
+    string(7) "YuShemg"
+    ["email"]=>
+    string(30) "chengyushengengineer@gmail.com"
+    ["firstName"]=>
+    string(5) "Cheng"
+    ["password"]=>
+    string(32) "e80e74de510c9102218da8ea87b2bbb5"
+  }
+}
+---------------------------
+
+23:46:22 (apps) 
+-------------------------
+file name/var/www/html/inc/class/AppUtil.php
+at line41
+msg
+@ @ @ @ @ @ @ @ @ @ @ @ @
+array(1) {
+  [0]=>
+  array(10) {
+    ["id"]=>
+    string(32) "3348c0d380a6462d9bdd82e8db8f9dd9"
+    ["uid"]=>
+    string(32) "16a0976b0e074f16bfdf8a360ad29dc1"
+    ["bgColor"]=>
+    string(6) "FFFFFF"
+    ["fgColor"]=>
+    string(6) "000000"
+    ["platform"]=>
+    string(1) "1"
+    ["adsOn"]=>
+    string(1) "1"
+    ["cycleTime"]=>
+    string(2) "15"
+    ["name"]=>
+    string(7) "adwhirl"
+    ["transition"]=>
+    string(1) "8"
+    ["locationOn"]=>
+    string(1) "1"
+  }
+}
+---------------------------
+
+23:46:26 (apps) 
+-------------------------
+file name/var/www/html/inc/class/NetworkUtil.php
+at line69
+msg
+@ @ @ @ @ @ @ @ @ @ @ @ @
+array(2) {
+  [0]=>
+  array(7) {
+    ["id"]=>
+    string(32) "8835095884a244cb9e994371c6f8ee4d"
+    ["adsOn"]=>
+    string(1) "1"
+    ["weight"]=>
+    string(2) "50"
+    ["priority"]=>
+    string(1) "1"
+    ["aid"]=>
+    string(32) "3348c0d380a6462d9bdd82e8db8f9dd9"
+    ["type"]=>
+    string(1) "1"
+    ["key"]=>
+    string(16) " a14e3a2af035e65"
+  }
+  [1]=>
+  array(7) {
+    ["id"]=>
+    string(32) "df55c50d3c5b4f399deb8990d33bc7c3"
+    ["adsOn"]=>
+    string(1) "1"
+    ["weight"]=>
+    string(2) "50"
+    ["priority"]=>
+    string(1) "2"
+    ["aid"]=>
+    string(32) "3348c0d380a6462d9bdd82e8db8f9dd9"
+    ["type"]=>
+    string(2) "21"
+    ["key"]=>
+    string(9) "0000003XS"
+  }
+}
+---------------------------
+

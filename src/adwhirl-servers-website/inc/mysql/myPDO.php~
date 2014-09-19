@@ -1,0 +1,40 @@
+<?php
+class myPDO{
+	
+	private static $user = 'root';
+	private static $pass = 'information';
+	private static $dsn = 'mysql:dbname=test;host=127.0.0.1';
+	private static $instance = null;
+	private static $pdo=null; 
+	
+	function __constrcut(){
+		
+			self::$pdo = new PDO(self::$dsn,self::$user,self::$pass);
+	}
+	
+	static function getinstance(){
+		
+		if(self::$instance == null)
+			self::$instance = new myPDO();
+		return self::$instance; 
+	}	
+	/**
+	 * 
+	  Enter description here ...
+	  @param string $table_name 	:	table of database 
+	  @param array  $input_array 	:	key of array is matedata(row) , value of array is column values
+	 */
+	 
+	function insert($table_name , $input_array){
+		
+		//matedata
+		$metadata = array_keys($input_array);
+		$qry = 'insert into '.$table_name.'('.implode(',', $metadata).") values('".implode("','",$input_array)." '); ";
+		$qry_stm = self::$pdo->prepare($qry, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+		$qry_stm->execute();
+		echo "win";
+
+		
+	}
+}
+?>

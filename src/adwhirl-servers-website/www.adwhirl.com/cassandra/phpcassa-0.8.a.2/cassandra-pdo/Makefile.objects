@@ -1,0 +1,14 @@
+cassandra_driver.lo: /root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo/cassandra_driver.cpp
+	$(LIBTOOL) --mode=compile $(CXX) -Wall -Wno-write-strings -I. -I/root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo/cassandra_driver.cpp -o cassandra_driver.lo 
+cassandra_statement.lo: /root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo/cassandra_statement.cpp
+	$(LIBTOOL) --mode=compile $(CXX) -Wall -Wno-write-strings -I. -I/root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo/cassandra_statement.cpp -o cassandra_statement.lo 
+gen-cpp/Cassandra.lo: /root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo/gen-cpp/Cassandra.cpp
+	$(LIBTOOL) --mode=compile $(CXX) -Wall -Wno-write-strings -I. -I/root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo/gen-cpp/Cassandra.cpp -o gen-cpp/Cassandra.lo 
+gen-cpp/cassandra_types.lo: /root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo/gen-cpp/cassandra_types.cpp
+	$(LIBTOOL) --mode=compile $(CXX) -Wall -Wno-write-strings -I. -I/root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /root/Desktop/Coding/php/www/html/adwhirl-servers-website/www.adwhirl.com/cassandra/phpcassa-0.8.a.2/cassandra-pdo/gen-cpp/cassandra_types.cpp -o gen-cpp/cassandra_types.lo 
+$(phplibdir)/pdo_cassandra.la: ./pdo_cassandra.la
+	$(LIBTOOL) --mode=install cp ./pdo_cassandra.la $(phplibdir)
+
+./pdo_cassandra.la: $(shared_objects_pdo_cassandra) $(PDO_CASSANDRA_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_pdo_cassandra) $(PDO_CASSANDRA_SHARED_LIBADD)
+

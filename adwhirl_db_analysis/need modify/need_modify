@@ -1,0 +1,73 @@
+AppHouseAdUtil
+
+line : 
+125
+153
+
+..................
+
+class AppUtil
+
+line:
+
+38
+73
+
+
+....................
+
+
+class CacheUtil :
+
+line
+30
+37
+
+....................
+
+class HouseAdUtil:
+
+line
+
+46
+74
+111
+
+..................
+
+class NetworkUtil :
+
+38
+63
+91
+
+..................
+
+class ReportUtil:
+
+line
+55
+156
+192
+
+..................
+
+
+class UserUtil:
+
+
+line:
+
+48 ,(53) ,After  entering account and password query . || regist service
+79
+108
+116
+143 (153): regist but have not email authenticate
+173
+
+.................
+
+
+
+
+

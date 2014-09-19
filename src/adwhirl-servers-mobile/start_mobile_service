@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#
+#
+java -Xmx512m -cp dist/adwhirl.jar Invoker&
+sleep 10s
+if test $? -eq 0
+then
+java -cp dist/adwhirl.jar Daemon&
+fi

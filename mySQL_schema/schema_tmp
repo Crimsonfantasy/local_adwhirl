@@ -1,0 +1,15 @@
+
+create table X(
+	
+	X	varchar(100),	
+	X	varchar(100),	
+	X	varchar(100),	
+	X	varchar(100),	
+	X	varchar(100),	
+	X	varchar(100),	
+	X	varchar(100),	
+	X	varchar(100),	
+
+	primary key(X)
+
+);

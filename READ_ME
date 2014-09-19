@@ -1,0 +1,48 @@
+安裝步驟
+1. 
+.................................................................
+cd install_system_environment/sh/
+./adwhirl_web_install.sh
+................................................................
+(adwhirl_web_install.sh 內有詳細說明做了那些事）
+(install_system_environment/sh/origine/ 
+放了adwhirl_web_install.sh更改檔案前的原始檔 ）
+----------------------------------------------------------------
+2. 
+cd mySQL_schema
+mysql -u root -p < adwhirl_mysql_schema
+..............................................................
+安裝資料庫的schema
+..............................................................
+3. 
+將src 內 的adwhirl-servers-website 放於 /var/www/html
+or mount --bind adwhirl-servers-website /var/www/html
+.............................................................
+4.test localhost:8080 是否可執行？
+............................................................
+5. 
+將src 內 的adwhirl-servers-mobile 是eclipse 的 project
+main function 有2 個
+Invoker
+Daemon
+先執行Invoker後Daemon
+可以啟動mobile server
+............................................................
+6.
+更改手機client的ip
+...........................................................
+7.
+以上步驟只是參考用 但是89不離10
+如果有問題請mail chengyushengengineer@gmail.com 
+謝謝
+
+
+
+...........................................
+MySQLdoc 有 mobile client 新增class的document~~
+...........................................
+adwhirl_db_analysis/schema內有database schema的詳細
+
+
+
+

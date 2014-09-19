@@ -1,0 +1,5 @@
+Now you will have a jar that you can start the services. Start it up. It you plan on serving a lot of traffic, you might want a larger heap size.
+`java -Xmx512m -cp dist/adwhirl.jar Invoker`
+
+The adwhirl server stores partial aggregate stats in a tempory table in SDB. You'll need to run the stats daemon to consolidate them.
+`java -cp dist/adwhirl.jar Daemon`

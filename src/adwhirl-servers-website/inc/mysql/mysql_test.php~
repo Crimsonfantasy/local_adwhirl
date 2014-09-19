@@ -1,0 +1,39 @@
+<?php
+  // connect to server  
+require_once('myPDO.php');
+
+/**   
+$user = 'root';
+$pass = 'information';
+$dsn = 'mysql:dbname=test;host=127.0.0.1';
+try {
+  $db = new PDO($dsn, $user, $pass);
+}
+catch(PDOException $e){
+  echo "no.................";
+}
+*/
+//--------------------------------
+/*
+
+$metadata = array_keys($input_array);
+$qry_stm = 'insert into '.$table_name.'('.implode(',', $metadata).") values('".implode("','",$input_array)." '); ";
+echo $qry_stm;
+*/
+$table_name = 'test2'; //( int ,varchar)
+$input_array = array('name1' => 30 , 'name2'=>'gmax2??lalala' );
+
+$my_pdo = myPDO::getinstance();
+$my_pdo->insert($table_name , $input_array);
+
+// test some query insertion 
+/**
+$name1 = 'a';
+$sql = ' select name1 ,name2 ,name3 from test1 where name1= :name1';
+$sgtm = $db->prepare($sql, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+$replaced = array(':name1'=>$name1);
+$stm->execute(array(':name1'=>$name1));
+
+$red = $stm->fetchAll();
+var_dump($red);
+*/

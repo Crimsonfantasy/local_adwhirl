@@ -1,0 +1,7 @@
+#! /bin/sh
+#
+# Created by configure
+
+CXXFLAGS='-g -O2' \
+'./configure' \
+"$@"

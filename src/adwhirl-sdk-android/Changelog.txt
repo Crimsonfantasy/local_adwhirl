@@ -1,0 +1,58 @@
+AdWhirl Android SDK Changelog
+
+For a full detailed change log visit http://code.google.com/p/adwhirl/source/list?repo=sdk-android
+
+***************************
+Version 3.0.0 (Apr 1 2011)
+***************************
+- Added support for 480x75 house ads
+- Added support for the Google AdMob Ads SDK
+- Updated Millennial Media adapters to support v4.2 of their SDK
+
+***************************
+Version 2.6.3 (Feb 22 2011)
+***************************
+- Added support for OneRiot
+- Updated InMobi adapter
+
+***************************
+Version 2.6.2 (Jan 24 2011)
+***************************
+- Added support for InMobi
+
+***************************
+Version 2.6.1 (Jan 11 2011)
+***************************
+- Added support for MdotM
+
+***************************
+Version 2.6.0 (Nov 24 2010)
+***************************
+- Added support to inflate from XML
+- House ads confined to 320x52
+- House ad icon properly scaled for density
+
+***************************
+Version 2.5.3 (Aug 18 2010)
+***************************
+- Added ZestADZ adapter
+- Added AFMA adapter
+- Vast refactoring to prevent memory leaks
+
+***************************
+Version 2.5.2 (Jul 26 2010)
+***************************
+- Don't pass a null location to Millennial adapter
+
+***************************
+Version 2.5.1 (Jul 19 2010)
+***************************
+- House ad adapter calls resetRollover() on success
+
+***************************
+Version 2.5.0 (Jul 16 2010)
+***************************
+- Added AdWhirlTargeting.
+- Adapters use rolloverThread()
+- Event adapter does not call rotate()/rollover()
+- Tested with latest AdMob library.

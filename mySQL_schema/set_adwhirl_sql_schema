@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+#
+cat schema >>  schema_prefix 
+mysql -u root -p < schema_prefix 
+cat schema  >> adwhirl_mysql_schema
+cp -f schema_tmp schema;
+cp -f schema_prefix_buf schema_prefix
+

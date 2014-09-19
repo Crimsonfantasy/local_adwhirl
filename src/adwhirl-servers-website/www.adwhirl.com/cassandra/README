@@ -1,0 +1,16 @@
+install  apache-cassandra-1.0.1-bin.tar.gz and  thrift-0.7.0.tar.gz
+
+https://wiki.fourkitchens.com/display/PF/Using+Cassandra+with+PHP
+
+phpcassa web home:
+
+https://github.com/thobbs/phpcassa
+
+install phpscassa( high level thrift library ):
+
+http://thobbs.github.com/phpcassa/installation.html
+
+
+phpscassa toturial:
+ 
+http://thobbs.github.com/phpcassa/tutorial.html

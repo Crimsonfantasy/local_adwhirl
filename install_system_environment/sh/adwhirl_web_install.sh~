@@ -1,0 +1,42 @@
+#!/bin/sh
+#
+#
+#
+
+#install sending mail server
+
+yum install postfix
+chkconfig --add postfix
+service postfix start
+
+#update php to php5.2
+
+if test -e /etc/yum.repos.d/CentOS-Base.repo ; then
+	cp  /etc/yum.repos.d/CentOS-Base.repo  CentOS-Base.repo_origine
+	cp CentOS-Base.repo_origine CentOS-Base.repo_origine1 
+	cat CentOS-Base.repo_php >> CentOS-Base.repo_origine1
+	mv CentOS-Base.repo_origine1   /etc/yum.repos.d/CentOS-Base.repo
+	yum update php*
+else
+	echo "not find /etc/yum.repos.d/CentOS-Base.repo
+	exit 1
+fi
+
+
+if (php -v | grep "PHP 5.2.*") ;then
+	echo " update php to php 5.2.10 "
+	cp /etc/httpd/conf/httpd.conf  httpd.conf_origine
+	cp httpd.conf_adwhirl  /etc/httpd/conf/httpd.conf
+else
+	echo "plesae check php version by 'php -v' "
+	exit 1
+fi
+
+service httpd restart
+
+# install xml paser
+yum install -y php-xml
+
+# install php development tookit and other ?
+yum install -y  php-devel 
+yum install -y php* 

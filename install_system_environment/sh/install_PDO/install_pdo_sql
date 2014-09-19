@@ -1,0 +1,16 @@
+# The package names will differ a bit for each system.
+# The following example uses the Yum package 
+# manager in CentOS, and gets PDO_MYSQL up and running in just a few minutes.
+
+yum install php-devel php-pear mysql-devel httpd-devel
+pecl install pdo
+PHP_PDO_SHARED=1 pecl install pdo_mysql
+
+#  add pdo_sql.so to apache server
+
+echo add pdo_sql.ini to /etc/php.d
+cp -f pdo.ini /etc/php.d
+cp -f pdo_sql.ini /etc/php.d
+echo please check wheather "extension=pdo.so" enable
+
+service httpd restart
